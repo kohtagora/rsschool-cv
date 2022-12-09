@@ -1,18 +1,43 @@
 body {
     background-color: powderblue;
+    font-family: 'Poppins', sans-serif;
+
 }
 h1 {
     color: blue;
+    font-family: Regular 400;
+    font-size: 100%;
 }
-.h2 {
+.h2 {   
     color: blue;
+    font-family: ExtraLight 200;
+    font-size: 75%;
 }
 .h3 {
     color: orange;
+    font-family: ExtraLight 200;
+    font-size: 50%;
 }
 p {
     color: red;
+    font-family: Light 300;
+    font-size: 30%;
 }
 .stats {
     background-color: #b9cc50;
+}
+.CV_Photo {
+    border-radius: 25px;
+    width: 500px;
+    height: 500px;
+}
+.skill_bar {
+    background-color: bisque;
+    width: 350px;
+    height: 10px;
+}
+.skill_bar_stat {
+    background-color: black;
+    width: 350px;
+    height: 10px;
 }
