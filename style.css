@@ -3,23 +3,28 @@ body {
     font-family: 'Poppins', sans-serif;
 
 }
+footer {
+    background-color: red;
+}
 h1 {
-    color: blue;
+    color: ;
     font-family: Regular 400;
     font-size: 100%;
 }
-.h2 {   
-    color: blue;
+h2 {   
+    color: ;
     font-family: ExtraLight 200;
     font-size: 75%;
 }
-.h3 {
-    color: orange;
+h3 {
+    color: ;
     font-family: ExtraLight 200;
     font-size: 50%;
 }
+h3 profession {
+}
 p {
-    color: red;
+    color: ;
     font-family: Light 300;
     font-size: 30%;
 }
@@ -40,4 +45,9 @@ p {
     background-color: black;
     width: 350px;
     height: 10px;
+}
+.divider {
+    background-color: black;
+    width: 500px;
+    height: 1px;
 }
