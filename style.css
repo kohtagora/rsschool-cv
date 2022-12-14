@@ -1,32 +1,122 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+
+/* Переменные var(--tech-color); */
+
+:root {
+    --black-color: #343434;
+ }
+:root {     
+    --dark-grey-color: #dadada;
+}
+:root {
+    --light-grey-color: #f6f6f6;
+}
+:root {
+    --white-color: #ffff;
+}
+:root { 
+    --tech-color: ;
+} 
+
+/* Основные стили */
+
 body {
     font-family: 'Poppins', sans-serif;
-
+    color: var(--black-color);
+    text-align: justify;
 }
+
 main {
     display: flex;
     padding: 50px;
 }
 footer {
-    background-color: red;
+    background-color: var(--tech-color);
     display: flex;
     padding: 10px 100px 10px 100px;
     justify-content: space-between;
     align-items: center;
 }
 h1 {
-    color: ;
     font-family: Regular 400;
     font-size: 50px;
 }
 h2 {   
-    color: ;
     font-family: ExtraLight 200;
     font-size: 35px;
+    margin: 15px auto 15px auto;
 }
 h3 {
-    color: ;
     font-family: ExtraLight 200;
     font-size: 25px;
+}
+h4 {
+    font-family: ExtraLight 200;
+    font-size: 25px;
+    color: red;
 }
 p {
     color: ;
@@ -35,63 +125,74 @@ p {
 }
 li {
     list-style: none;
+    display: flex;
 }
 ul {
     padding-left: 0;
 }
+
+/* Дополнительные стили */
+
+.row {
+    display:flex;
+    background-color: var(--tech-color);
+
+}
 .r-block {
-    background-color: rgb(207, 207, 207);
+    background-color: var(--white-color);
     width: 67%;
     padding: 50px;
 }
 .l-block {
-    background-color: rgb(224, 224, 224);
+    background-color: var(--light-grey-color);
     width: 33%;
     padding: 50px;
 }
 .name {
     width: 100%;
-    background-color: #b9cc50;
+    background-color: var(--tech-color);
 }
 .stats {
-    background-color: #b9cc50;
+    background-color: var(--tech-color);
 }
 .CV_Photo {
     border-radius: 100%;
-    background-color: #b9cc50;
+    background-color: var(--tech-color);
     width: 250px;
     height: 250px;
     background: url('CV CONTENT/img.jpg');
     background-position: center center;
     background-size: cover;
-    background-color: greenyellow;
-    margin: auto;
+    background-color: var(--tech-color);
+    margin: 0 auto 70px auto;
 }
 .add-info {
     display: flex;
     justify-content: space-between;
-    background-color: aqua;
+    background-color: var(--tech-color);
 }
 .add-info-module {
-    background-color: blueviolet; 
+    background-color: var(--tech-color); 
 }
 .prof-info {
-    background-color: blueviolet;
+    background-color: var(--tech-color);
 }
 .skill_bar {
-    background-color: bisque;
+    background-color: var(--dark-grey-color);
     width: 150px;
-    height: 5px;
+    height: 7px;
+    margin: auto 0 auto auto;
 }
 .skill_bar_stat {
-    background-color: black;
+    background-color: var(--black-color);
     width: 350px;
-    height: 5px;
+    height: 7px;
 }
 .divider {
-    background-color: black;
+    background-color: var(--black-color);
     width: 100%;
     height: 1px;
+    margin: 0 auto 30px auto;
 }
 .pic-1 {
     width: 50px;
@@ -100,4 +201,10 @@ ul {
 .pic-2 {
     width: 150px;
     height: 150px;
+}
+.shadow {
+    box-shadow: 0px 0px 50px 5px var(--dark-grey-color);
+}
+.menu {
+    display: inline;
 }
