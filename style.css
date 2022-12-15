@@ -88,24 +88,24 @@ body {
     color: var(--black-color);
     text-align: justify;
 }
-
 main {
     display: flex;
-    padding: 50px;
+    padding: 30px 50px 50px 50px;
 }
 footer {
     background-color: var(--tech-color);
     display: flex;
-    padding: 10px 100px 10px 100px;
+    padding: 0px 100px 50px 100px;
     justify-content: space-between;
     align-items: center;
+    margin: 0;
 }
 h1 {
-    font-family: Regular 400;
+    font-weight: 600;
     font-size: 50px;
 }
 h2 {   
-    font-family: ExtraLight 200;
+    font-weight: 500;
     font-size: 35px;
     margin: 15px auto 15px auto;
 }
@@ -114,9 +114,8 @@ h3 {
     font-size: 25px;
 }
 h4 {
-    font-family: ExtraLight 200;
+    font-weight: 300;
     font-size: 25px;
-    color: red;
 }
 p {
     color: ;
@@ -129,6 +128,10 @@ li {
 }
 ul {
     padding-left: 0;
+}
+a {
+    text-decoration: underline;
+    color: var(--black-color);
 }
 
 /* Дополнительные стили */
@@ -151,6 +154,8 @@ ul {
 .name {
     width: 100%;
     background-color: var(--tech-color);
+    padding-top: 50px;
+
 }
 .stats {
     background-color: var(--tech-color);
@@ -170,6 +175,7 @@ ul {
     display: flex;
     justify-content: space-between;
     background-color: var(--tech-color);
+    margin: 50px auto 30px auto;
 }
 .add-info-module {
     background-color: var(--tech-color); 
@@ -197,14 +203,48 @@ ul {
 .pic-1 {
     width: 50px;
     height: 50px;
+    opacity: 0.4;
+    transition: 0.6s;
+}
+.pic-1:hover {
+    opacity: 1;
 }
 .pic-2 {
     width: 150px;
-    height: 150px;
+    height: 50px;
+    opacity: 0.4;
+    transition: 0.6s;
+}
+.pic-2:hover {
+    opacity: 1;
 }
 .shadow {
     box-shadow: 0px 0px 50px 5px var(--dark-grey-color);
 }
 .menu {
-    display: inline;
+    display: flex;
+    margin: 30px 50px 0px 0px;
+    justify-content: flex-end;
+}
+.menu-module {
+    padding: 0 0 0 50px;
+    opacity: 0.2;
+    transition: 0.3s;
+}
+.menu-module:hover {
+    opacity: 0.8;
+}
+.code-block {
+    box-shadow: 0px 0px 50px 5px var(--dark-grey-color) inset;
+    padding: 35px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.orange {
+    color: orange;
+}
+.green {
+    color: green;
+}
+.yellow {
+    color: yellowgreen;
 }
