@@ -248,3 +248,8 @@ a {
 .yellow {
     color: yellowgreen;
 }
+.center {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
